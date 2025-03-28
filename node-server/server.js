@@ -28,3 +28,7 @@ io.on('connection', (socket) => {
 server.listen(6001, () => {
     console.log('Socket.IO server running on port 6001');
 });
+
+app.get('/', function(req, res) {
+   res.send('Hello World');
+})
